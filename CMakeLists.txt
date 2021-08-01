@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.19)
+project(Theater)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(Theater com/theater/ui/main.cpp com/theater/bl/Business.cpp com/theater/bl/Business.h com/theater/tl/Controller.cpp com/theater/tl/Controller.h com/theater/bl/structures/List.cpp com/theater/bl/structures/List.h com/theater/bl/structures/Node/NodeSeat.cpp com/theater/bl/structures/Node/NodeSeat.h com/theater/bl/objects/Seat/Seat.cpp com/theater/bl/objects/Seat/Seat.h com/theater/bl/structures/Queue/Queue.cpp com/theater/bl/structures/Queue/Queue.h com/theater/bl/structures/Stack/Stack.cpp com/theater/bl/structures/Stack/Stack.h com/theater/bl/structures/Simple/SimpleList.cpp com/theater/bl/structures/Simple/SimpleList.h com/theater/bl/objects/Person/Person.cpp com/theater/bl/objects/Person/Person.h com/theater/bl/structures/Node/NodePerson.cpp com/theater/bl/structures/Node/NodePerson.h com/theater/bl/structures/Queue/Queue.cpp com/theater/bl/structures/Queue/Queue.h com/theater/const/Constant.cpp com/theater/const/Constant.h)
