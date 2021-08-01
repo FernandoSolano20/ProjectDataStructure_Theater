@@ -56,7 +56,7 @@ int getSeatPosition() {
 void reserveSeat() {
     string name = "";
     int id = 0;
-    cout << "Digite la cedula del clientes" << endl;
+    cout << "Digite la cedula del cliente" << endl;
     cin >> id;
     cout << "Digite el nombre del cliente" << endl;
     cin >> name;
