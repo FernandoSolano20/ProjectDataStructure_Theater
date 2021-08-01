@@ -14,6 +14,7 @@ bool Stack::isAllReserved() {
         if (!aux->getData()->isReserved()){
             return false;
         }
+        aux = aux->getNext();
     }
     return true;
 }

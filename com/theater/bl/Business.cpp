@@ -155,7 +155,7 @@ List* Business::getArea(int position) {
         if (!preferentialGrandstandRow5->isAllReserved()) {
             return preferentialGrandstandRow5;
         }
-        return nullptr;
+        return preferentialGrandstandRow5;
     }
     else if (position >= Constant::BeginGeneralGrandstand && position <= Constant::FinalGeneralGrandstand) {
         return generalGrandstand;
