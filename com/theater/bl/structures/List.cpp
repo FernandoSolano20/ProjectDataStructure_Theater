@@ -70,6 +70,22 @@ void List::setArea(string area) {
     this->area = area;
 }
 
+string List::showArea() {
+    int count = 0;
+    string result = "";
+    NodeSeat* aux = getHead();
+    while (aux != nullptr) {
+        if (count % 10 == 0) {
+            result += "\n";
+        }
+        Seat* seat = aux->getData();
+        result += seat->showSeat() + " ";
+        aux = aux->getNext();
+        count++;
+    }
+    return result;
+}
+
 void List::setPersonToWaitList(Person *person) {
     waitingList->push(person);
 }

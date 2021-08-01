@@ -87,6 +87,14 @@ string Business::showWaitingListByArea(string area) {
     return "No existe esa seccion.";
 }
 
+string Business::showAllTheater() {
+    return preferentialArea->showArea() + "\n" +
+    preferentialGrandstandRow1->showArea() + "   " + preferentialGrandstandRow2->showArea() + "\n" +
+    preferentialGrandstandRow3->showArea() + "   " + preferentialGrandstandRow4->showArea() + "\n" +
+    "                    " + preferentialGrandstandRow5->showArea() + "\n" +
+    generalGrandstand->showArea();
+}
+
 
 void Business::initSeats() {;
     for (int i = 1; i <= Constant::FinalGeneralGrandstand; ++i) {

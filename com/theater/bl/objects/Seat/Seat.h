@@ -21,6 +21,7 @@ public:
     void setPosition(int position);
     Person* getSeatOwner();
     void setSeatOwner(Person* owner);
+    string showSeat();
 private:
     int price;
     bool reserved;

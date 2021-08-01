@@ -72,7 +72,8 @@ int main() {
         cout << "1- Reservar espacio" << endl;
         cout << "2- Mostar cantidad de reservas por area" << endl;
         cout << "3- Mostar lista de espera por area" << endl;
-        cout << "4- Salir" << endl;
+        cout << "4- Mostar todo el teatro" << endl;
+        cout << "5- Salir" << endl;
         cin >> opc;
         switch (opc) {
             case 1:
@@ -87,12 +88,15 @@ int main() {
                 cout << controller->showWaitingListByArea(area) << endl;
                 break;
             case 4:
+                cout << controller->showAllTheater() << endl;
+                break;
+            case 5:
                 cout << "Cerrando sistema" << endl;
                 break;
             default:
                 cout << "Opcion no valida" << endl;
                 break;
         }
-    } while (opc != 4);
+    } while (opc != 5);
     return 0;
 }

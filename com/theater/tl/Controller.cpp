@@ -19,3 +19,7 @@ string Controller::showTotalReservesByArea(string area) {
 string Controller::showWaitingListByArea(string area) {
     return business->showWaitingListByArea(area);
 }
+
+string Controller::showAllTheater() {
+    return business->showAllTheater();
+}

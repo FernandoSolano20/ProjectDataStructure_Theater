@@ -33,20 +33,17 @@ void Stack::push(Seat* data) {
 
 bool Stack::reserveSeat(Person *person, int position) {
     NodeSeat* node = getHead();
-    bool addIt = false;
-    while (addIt == false) {
-        Seat* seat = node->getData();
-        if (!seat->isReserved()){
-            seat->setSeatOwner(person);
-            seat->setReserved(true);
-            addIt = true;
-            return addIt;
-        }
-        if (node->getNext() == nullptr) {
-            addIt = false;
-            return addIt;
-        }
+    NodeSeat* next = getHead()->getNext();
+    while (next != nullptr && !next->getData()->isReserved()) {
         node = node->getNext();
+        next = next->getNext();
     }
-    return addIt;
+
+    Seat* seat = node->getData();
+    if (!seat->isReserved()){
+        seat->setSeatOwner(person);
+        seat->setReserved(true);
+        return true;
+    }
+    return false;
 }

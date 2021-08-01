@@ -2,6 +2,7 @@
 // Created by fersolano on 7/31/2021.
 //
 
+#include <string>
 #include "Seat.h"
 
 Seat::Seat() {
@@ -41,4 +42,8 @@ Person * Seat::getSeatOwner() {
 
 void Seat::setSeatOwner(Person* owner) {
     this->seatOwner = owner;
+}
+
+string Seat::showSeat() {
+    return "--- [ P: " + to_string(getPosition()) + " R: " + to_string(isReserved()) + " ] ---";
 }

@@ -20,6 +20,7 @@ public:
     void setPersonToWaitList(Person* person);
     string getArea();
     void setArea(string area);
+    string showArea();
     virtual void push(Seat* data) = 0;
     virtual bool reserveSeat(Person* person, int position) = false;
 protected:

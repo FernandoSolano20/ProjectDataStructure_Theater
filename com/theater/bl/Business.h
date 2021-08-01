@@ -16,6 +16,7 @@ public:
     string reserveSeat(Person* person, int position);
     string showTotalReservesByArea(string area);
     string showWaitingListByArea(string area);
+    string showAllTheater();
 private:
     void initSeats();
     List* getArea(int position);

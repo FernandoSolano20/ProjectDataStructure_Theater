@@ -16,6 +16,7 @@ public:
     string reserveSeat(int id, string name, int position);
     string showTotalReservesByArea(string Area);
     string showWaitingListByArea(string Area);
+    string showAllTheater();
 private:
     Business* business;
 };
